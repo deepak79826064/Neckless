@@ -1,11 +1,13 @@
 import React from "react";
-
+//import PropTypes from "prop-types";
 function navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{backgroundColor : "black"}} >
+      <nav
+        className="navbar navbar-expand-lg" style={{ backgroundColor: "#b4bbc5" }}
+      >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand text-white" href="/">
             SB Collection
           </a>
           <button
@@ -22,18 +24,18 @@ function navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active text-white" aria-current="page" href="/">
                   HOME
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link text-white" href="/">
                   ALL JEWELRY
                 </a>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" >
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-white" 
                   href="/"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -44,12 +46,7 @@ function navbar() {
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="/">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Another action
+                      Ear Rings
                     </a>
                   </li>
                   <li>
@@ -57,26 +54,26 @@ function navbar() {
                   </li>
                   <li>
                     <a className="dropdown-item" href="/">
-                      Something else here
+                      Rings
+                    </a>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/">
+                      Neckpiece
                     </a>
                   </li>
                 </ul>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-              </li> */}
+              <li className="nav-item">
+                <a className="nav-link text-white" aria-current="page" href="/">
+                  Contact Us
+                </a>
+              </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              {/* <button className="btn btn-outline-success" type="submit">
-                Search
-              </button> */}
-            </form>
+            
           </div>
         </div>
       </nav>
